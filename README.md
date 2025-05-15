@@ -1,30 +1,42 @@
-# 🎓 Akademik Personel Başvuru Sistemi
+# 🎓 Akademi Başvuru Sistemi
 
-Bu proje, Kocaeli Üniversitesi 2024-2025 Bahar dönemi Yazılım Geliştirme Laboratuvarı II dersi kapsamında geliştirilmiştir. Akademik kadrolara başvuru yapılmasını, ilan yönetimini, jüri değerlendirmelerini ve başvuru kriterlerinin yönetimini dijital ortama taşır.
+Bu proje, akademik personel başvurularının dijital ortamda alınması ve puanlandırılmasını sağlayan bir web tabanlı sistemdir.
 
-## 🚀 Proje Özeti
+## 🚀 Özellikler
 
-Sistem; adayların ilanlara başvuru yapmasını, yöneticilerin kriter belirlemesini, jüri üyelerinin değerlendirme yapmasını ve başvuru süreçlerinin şeffaf şekilde yürütülmesini sağlar. Dört temel kullanıcı rolü vardır:
-
-- **Aday**: Akademik pozisyonlara başvuru yapar.
-- **Admin**: İlanları oluşturur ve düzenler.
-- **Yönetici**: Kadro kriterlerini belirler, jüri atar ve sonuç bildirir.
-- **Jüri Üyesi**: Adayları değerlendirir, rapor yükler.
+- 👤 Kullanıcı kayıt ve giriş sistemi (JWT doğrulama)
+- 📄 Akademik başvuru formları (Tez, Makale, Proje, Patent, Görevler vb.)
+- 📊 Otomatik puan hesaplama ve özet tablo
+- 📁 Dosya yükleme desteği (PDF, Word vb.)
+- 🔐 Admin ve aday kullanıcı rolleri
+- 📬 E-posta ile bildirim (onay/red durumları)
+- 📦 MongoDB veritabanı ile kayıt işlemleri
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- **Frontend**: React.js
-- **Backend**: Node.js (Express)
-- **Veritabanı**: MongoDB
-- **Kimlik Doğrulama**: JWT (JSON Web Token)
-- **Dosya Depolama**: (Opsiyonel) Firebase veya AWS S3
-- **Proje Takibi**: Trello
+**Frontend:**
+- React.js
+- TailwindCSS
+- Form verisi yönetimi (useState, useEffect, useNavigate)
 
-## 🔧 Kurulum ve Çalıştırma
+**Backend:**
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT ile Kimlik Doğrulama
+- Multer ile dosya yükleme
 
-### 1. Backend Kurulumu
+## 🔧 Kurulum
+
+### 1. Backend (Node.js)
+
 ```bash
 cd backend
 npm install
 npm start
+
+2. Frontend (React)
+cd frontend
+npm install
+npm start
+
 
